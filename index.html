@@ -3,76 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abich | Portafolio de Desarrollo</title>
+    <title>Abich | Portafolio Premium</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <canvas id="particle-canvas"></canvas>
+
     <nav>
-        <h1>Abich</h1>
+        <h1 class="nav-logo">ABIGAIL</h1>
         <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#webs">Sitios Web</a></li>
-            <li><a href="#apps">Apps Móviles</a></li>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#webs">SITIOS WEB</a></li>
+            <li><a href="#apps">APPS MÓVILES</a></li>
         </ul>
     </nav>
 
     <header id="inicio">
-        <h2>Hola, soy Abich</h2>
-        <p>Desarrollador y creador de soluciones digitales. Aquí puedes explorar mis páginas web y descargar mis aplicaciones móviles.</p>
-        <a href="#webs" class="btn">Ver mi trabajo</a>
+        <div class="hero-content">
+            <h2 class="animate-text">HOLA, SOY ABIGAIL.</h2>
+            <p>Soy una desarrolladora web y movil. Este es mi portafolio con varios de mis proyectos realizados durante mi vida como estudiante.</p>
+            <a href="#webs" class="btn premium-btn">VER MI TRABAJO</a>
+        </div>
     </header>
 
     <section id="webs">
-        <h2 class="section-title">Páginas Web</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>Pronostico del tiempo</h3>
-                <p>Página web en donde se puede buscar el pronostico del tiempo según la ciudad deseada.</p>
-                <a href="https://abigail-m17.github.io/PORTAFOLIO/Aplicacion_Clima/index.html" class="btn" target="_blank">Visitar Sitio</a>
+        <h2 class="section-title glass-title">Páginas Web</h2>
+        <div class="grid webs-grid">
+            
+            <div class="card web-card glass-card">
+                <div class="card-inner">
+                    <h3>Pronóstico del tiempo</h3>
+                    <p>Página web en donde se puede buscar el pronóstico del tiempo según la ciudad deseada.</p>
+                    <a href="https://abigail-m17.github.io/PORTAFOLIO/Aplicacion_Clima/index.html" class="btn visit-btn" target="_blank">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
             
-            <div class="card">
-                <h3>Graficadora</h3>
-                <p>Aplicación web que ayuda a observar gráficamente una ecuación matemática con una calculadora en pantalla o mediante el teclado físico de la computadoras.</p>
-                <a href="https://abigail-m17.github.io/PORTAFOLIO/Graficadora/index.html" class="btn" target="_blank">Visitar Sitio</a>
+            <div class="card web-card glass-card">
+                <div class="card-inner">
+                    <h3>Graficadora</h3>
+                    <p>Aplicación web que ayuda a observar gráficamente una ecuación matemática con una calculadora en pantalla o mediante el teclado físico de la computadora.</p>
+                    <a href="https://abigail-m17.github.io/PORTAFOLIO/Graficadora/index.html" class="btn visit-btn" target="_blank">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Lista de tares</h3>
-                <p>Web que nos ayuda a poder agendar actividades de una mandera visualmente atractiva con un sistema de observar nuestros pendientes y tareas ya realizadas para una mejor gestión de estas.</p>
-                <a href="https://abigail-m17.github.io/PORTAFOLIO/List_To_Do/index.html" class="btn" target="_blank">Visitar Sitio</a>
+            <div class="card web-card glass-card">
+                <div class="card-inner">
+                    <h3>Lista de tareas</h3>
+                    <p>Web que nos ayuda a poder agendar actividades de una manera visualmente atractiva con un sistema de observar nuestros pendientes y tareas ya realizadas.</p>
+                    <a href="https://abigail-m17.github.io/PORTAFOLIO/List_To_Do/index.html" class="btn visit-btn" target="_blank">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Juego del Gato</h3>
-                <p>Juego divertido del gato tradicional con dos modos de juego: Jugador vs Jugador o Jugador vs Computadora</p>
-                <a href="https://abigail-m17.github.io/PORTAFOLIO/TicTacToe/index.html" class="btn" target="_blank">Visitar Sitio</a>
+            <div class="card web-card glass-card">
+                <div class="card-inner">
+                    <h3>Juego del Gato</h3>
+                    <p>Juego divertido del gato tradicional con dos modos de juego: Jugador vs Jugador o Jugador vs Computadora.</p>
+                    <a href="https://abigail-m17.github.io/PORTAFOLIO/TicTacToe/index.html" class="btn visit-btn" target="_blank">Visitar Sitio <i class="fas fa-external-link-alt"></i></a>
+                </div>
             </div>
+
         </div>
     </section>
 
-
     <section id="apps">
-        <h2 class="section-title">Aplicaciones Móviles (APKs)</h2>
-        <div class="grid">
-            <div class="card">
-                <h3>App de Productividad</h3>
-                <p>Aplicación Android para organizar tareas diarias, recordatorios y gestión de tiempo.</p>
-                <a href="https://abigail-m17.github.io/PORTAFOLIO/APKs/app-debug.apk" download="ProductividadApp.apk" class="btn">Descargar APK</a>
-            </div>
+        <h2 class="section-title glass-title">Aplicaciones Móviles (APKs)</h2>
+        <div class="apk-carousel-container glass-card">
+            <div class="apk-carousel">
+                
+                <div class="apk-item glass-card">
+                    <i class="fab fa-android apk-icon"></i>
+                    <h3>App de Productividad</h3>
+                    <p>Aplicación Android para organizar tareas diarias, recordatorios y gestión de tiempo.</p>
+                    <a href="https://abigail-m17.github.io/PORTAFOLIO/APKs/app-debug.apk" download="ProductividadApp.apk" class="btn download-btn">Descargar APK <i class="fas fa-download"></i></a>
+                </div>
 
-            <div class="card">
-                <h3>Calculadora Especializada</h3>
-                <p>Herramienta móvil con fórmulas avanzadas diseñada para cálculos rápidos en entornos académicos.</p>
-                <a href="CalculadoraApp.apk" download="CalculadoraApp.apk" class="btn">Descargar APK</a>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Abich. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Abigail Moreno Jimenez. Todos los derechos reservados.</p>
     </footer>
 
     <script src="script.js"></script>
